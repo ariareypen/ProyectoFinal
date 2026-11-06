@@ -1,0 +1,89 @@
+{
+    private int espacios;
+    private int espacios_ocupados;
+    private PocionVida pocionVida; //Poción para curar
+    private PocionEnergia pocionEnergia; //Poción para recuperar energía
+    private Arma arma; //Arma
+    private Mapa mapa; //Mapa
+    private Llave llave; //Llave para abrir puertas
+    private Diamante diamante //Diamante para revivir
+    public Inventario()//constructor que se ejecuta al crear un objeto de la clase inventario
+    {
+        espacios = 10;
+        espacios_ocupados = 0;
+        pocionVida = new PocionVida();
+        pocionEnergia = new PocionEnergia();
+        arma = new Arma();
+        mapa = new Mapa();
+        llave = new Llave();
+        diamante = new Diamante();
+    }
+}
+
+/////////////////////////////////////////
+
+public Objeto[] Objetos { get; private set; }
+public Inventario()
+{
+    Objetos = new Objeto[0];
+}
+// Agregar objetos
+public void Agregar(Objeto objeto)
+{
+    Objeto[] nuevo = new Objeto[Objetos.Length + 1];
+    for (int i = 0; i < Objetos.Length; i++)
+    {
+        nuevo[i] = Objetos[i];
+    }
+    nuevo[Objetos.Length] = objeto;
+    Objetos = nuevo;
+}
+// Buscar objetos
+public Objeto Buscar(string nombre)
+{
+    foreach (Objeto objeto in Objetos)
+    {
+        if (objeto.Nombre == nombre)
+        {
+            return objeto;
+        }
+    }
+    return null;
+}
+// Tirar objetos
+public void Tirar(string nombre)
+{
+    int posicion = -1;
+
+    for (int i = 0; i < Objetos.Length; i++)
+    {
+        if (Objetos[i].Nombre == nombre)
+        {
+            posicion = i;
+            break;
+        }
+    }
+
+    if (posicion == -1)
+        return;
+
+    Objeto[] nuevo = new Objeto[Objetos.Length - 1];
+
+    int j = 0;
+
+    for (int i = 0; i < Objetos.Length; i++)
+    {
+        if (i != posicion)
+        {
+            nuevo[j] = Objetos[i];
+            j++;
+        }
+    }
+
+    Objetos = nuevo;
+}
+
+public int Cantidad()
+{
+    return Objetos.Length;
+}
