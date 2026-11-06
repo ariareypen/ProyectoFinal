@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DDMI\\Programaci\u00F3n Orientada a Objetos I\\Pr\u00E1cticas\\Juego\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01437D3F-4768-44E6-B22D-E1B377EC77F3}|Juego\\Juego.csproj|d:\\ddmi\\programaci\u00F3n orientada a objetos i\\pr\u00E1cticas\\juego\\juego\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{01437D3F-4768-44E6-B22D-E1B377EC77F3}|Juego\\Juego.csproj|solutionrelative:juego\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\DDMI\\Programaci\u00F3n Orientada a Objetos I\\Pr\u00E1cticas\\Juego\\Juego\\Form1.cs",
+              "RelativeDocumentMoniker": "Juego\\Form1.cs",
+              "ToolTip": "D:\\DDMI\\Programaci\u00F3n Orientada a Objetos I\\Pr\u00E1cticas\\Juego\\Juego\\Form1.cs [Design]",
+              "RelativeToolTip": "Juego\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T19:23:09.105Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
